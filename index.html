@@ -4,9 +4,11 @@
   <head>
 
     <title>freeCodeCamp Survey Form</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="freeCodeCamp Survey Form">
+    <meta name="keywords" content="freeCodeCamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
     <script defer src="javascript/javascript.js"></script>
 
@@ -24,7 +26,7 @@
       <br><input type="text" id="email-label" name="email" value="Enter your email">
       <br><label for="age" id="number">Age (optional)</label>
       <br><input type="text" id="number-label" name="age" value="Age">
-      <br><label for="role">Which option best describes your current role?</label>
+      <br><label for="role" id="role">Which option best describes your current role?</label>
         <br><select name="role" id="dropdown">
           <option value="1" selected disabled>Select current role</option>
           <option value="2">Student</option>
@@ -35,12 +37,12 @@
         </select>
       <br><label for="recommend" id="recommend">Would you recommend freeCodeCamp to a friend?</label>
         <br><input type="radio" id="definitely" name="definitely" value="definitely">
-        <label for="definitely">Definitely</label><br>
+        <label for="definitely" class="radio">Definitely</label><br>
         <input type="radio" id="maybe" name="maybe" value="maybe">
-        <label for="maybe">Maybe</label><br>
+        <label for="maybe" class="radio">Maybe</label><br>
         <input type="radio" id="notsure" name="not-sure" value="not-sure">
-        <label for="notsure">Not sure</label><br>
-      <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+        <label for="notsure" class="radio">Not sure</label>
+      <br><label for="favorite" id="favorite">What is your favorite feature of freeCodeCamp?</label>
         <br><select name="favorite" id="dropdown">
           <option value="1" selected disabled>Select an option</option>
           <option value="2">Challenges</option>
@@ -50,27 +52,27 @@
         </select>
       <br><label for="improve" id="improve">What would you like to see improved? (Check all that apply)</label>
         <br><input type="checkbox" id="front-end-projects" name="front-end-projects" value="front-end-projects">
-        <label for="front-end-projects">Front-end Projects</label>
+        <label for="front-end-projects" class="checkbox">Front-end Projects</label>
         <br><input type="checkbox" id="back-end-projects" name="back-end-projects" value="back-end-projects">
-        <label for="back-end-projects">Back-end Projects</label>
+        <label for="back-end-projects" class="checkbox">Back-end Projects</label>
         <br><input type="checkbox" id="data-visualization" name="data-visualization" value="data-visualization">
-        <label for="data-visualization">Data Visualization</label>
+        <label for="data-visualization" class="checkbox">Data Visualization</label>
         <br><input type="checkbox" id="challenges" name="challenges" value="challenges">
-        <label for="challenges">Challenges</label>
+        <label for="challenges" class="checkbox">Challenges</label>
         <br><input type="checkbox" id="open-source-community" name="open-source-community" value="open-source-community">
-        <label for="open-source-community">Open Source Community</label>
+        <label for="open-source-community" class="checkbox">Open Source Community</label>
         <br><input type="checkbox" id="gitter-help-rooms" name="gitter-help-rooms" value="gitter-help-rooms">
-        <label for="gitter-help-rooms">Gitter help rooms</label>
+        <label for="gitter-help-rooms" class="checkbox">Gitter help rooms</label>
         <br><input type="checkbox" id="videos" name="videos" value="videos">
-        <label for="videos">Videos</label>
+        <label for="videos" class="checkbox">Videos</label>
         <br><input type="checkbox" id="city-meetups" name="city-meetups" value="city-meetups">
-        <label for="city-meetups">City Meetups</label>
+        <label for="city-meetups" class="checkbox">City Meetups</label>
         <br><input type="checkbox" id="wiki" name="wiki" value="wiki">
-        <label for="wiki">Wiki</label>
+        <label for="wiki" class="checkbox">Wiki</label>
         <br><input type="checkbox" id="forum" name="forum" value="forum">
-        <label for="forum">Forum</label>
+        <label for="forum" class="checkbox">Forum</label>
         <br><input type="checkbox" id="additional-courses" name="additional-courses" value="additional-courses">
-        <label for="additional-courses">Additional Course</label>
+        <label for="additional-courses" class="checkbox">Additional Course</label>
       <br><label for="comments" id="comments">Any comments or suggestions?</label>
         <br><textarea rows="5" cols="50" name="comments" form="user-form">Enter your comment here...</textarea>
       <br><input type="submit" id="submit">
