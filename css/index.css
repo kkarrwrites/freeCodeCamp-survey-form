@@ -11,9 +11,10 @@ html {
     box-sizing: border-box;
 }
 
-body, footer, h1, h2, h3, h4, h5, h6, p {
+body, footer, h1, h2, h3, h4, h5, h6, p, textarea {
     margin: 0;
     padding: 0;
+    line-height: 1.75;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -26,6 +27,7 @@ a, a:visited {
 body {
     background-image: linear-gradient(0deg, rgba(58, 58, 158, 0.8), rgba(58, 58, 158, 0.8)), url("../resources/background.jpeg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Text */
@@ -56,11 +58,26 @@ body {
 
 #survey-form {
     background-color: rgba(27, 27, 50, 0.8);
-    border-radius: 5px;
+    border-radius: 2px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 700px;
+    padding: 50px;
+}
+
+input[type=text], input[type=email], #number-label, #dropdown, textarea, #submit {
+    width: 100%;
+    margin: 12px 0 24px 0;
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#submit {
+   color: #fff;
+   background-color: rgba(76, 175, 80, 1);
+   cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {

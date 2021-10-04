@@ -21,11 +21,11 @@
 
     <form id="survey-form">
       <label for="name" id="name">Name</label>
-      <br><input type="text" id="name-label" name="name" value="Enter your name">
+      <br><input type="text" id="name-label" name="name" placeholder="Enter your name">
       <br><label for="email" id="email">Email</label>
-      <br><input type="text" id="email-label" name="email" value="Enter your email">
+      <br><input type="email" id="email-label" name="email" placeholder="Enter your email">
       <br><label for="age" id="number">Age (optional)</label>
-      <br><input type="text" id="number-label" name="age" value="Age">
+      <br><input type="number" id="number-label" name="age" placeholder="Age" min="13" max="150">
       <br><label for="role" id="role">Which option best describes your current role?</label>
         <br><select name="role" id="dropdown">
           <option value="1" selected disabled>Select current role</option>
@@ -42,7 +42,7 @@
         <label for="maybe" class="radio">Maybe</label><br>
         <input type="radio" id="notsure" name="not-sure" value="not-sure">
         <label for="notsure" class="radio">Not sure</label>
-      <br><label for="favorite" id="favorite">What is your favorite feature of freeCodeCamp?</label>
+      <br><br><label for="favorite" id="favorite">What is your favorite feature of freeCodeCamp?</label>
         <br><select name="favorite" id="dropdown">
           <option value="1" selected disabled>Select an option</option>
           <option value="2">Challenges</option>
@@ -73,8 +73,8 @@
         <label for="forum" class="checkbox">Forum</label>
         <br><input type="checkbox" id="additional-courses" name="additional-courses" value="additional-courses">
         <label for="additional-courses" class="checkbox">Additional Course</label>
-      <br><label for="comments" id="comments">Any comments or suggestions?</label>
-        <br><textarea rows="5" cols="50" name="comments" form="user-form">Enter your comment here...</textarea>
+      <br><br><label for="comments" id="comments">Any comments or suggestions?</label>
+        <br><textarea rows="5" cols="50" name="comments" form="user-form" placeholder="Enter your comment here..."></textarea>
       <br><input type="submit" id="submit">
     </form>
 
